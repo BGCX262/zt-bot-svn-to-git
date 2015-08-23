@@ -1,0 +1,522 @@
+Archive member included because of file (symbol)
+
+c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_udivmodhi4.o)
+                              LCD.o (__udivmodhi4)
+c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                              c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm644.o (exit)
+c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                              zombitech.o (__do_copy_data)
+c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                              zombitech.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+SPITransmitting     0x1               SPI.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm644.o
+LOAD zombitech.o
+LOAD BasicControl.o
+LOAD LCD.o
+LOAD SPI.o
+LOAD c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
+LOAD c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a
+LOAD c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x178a
+ *(.vectors)
+ .vectors       0x00000000       0x70 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm644.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000070                . = ALIGN (0x2)
+                0x00000070                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000070        0x0 linker stubs
+ *(.trampolines*)
+                0x00000070                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000070                __ctors_start = .
+ *(.ctors)
+                0x00000070                __ctors_end = .
+                0x00000070                __dtors_start = .
+ *(.dtors)
+                0x00000070                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000070        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm644.o
+                0x00000070                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000070        0xc c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm644.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000007c       0x16 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                0x0000007c                __do_copy_data
+ .init4         0x00000092       0x10 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                0x00000092                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000a2        0x8 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm644.o
+ *(.init9)
+ *(.text)
+ .text          0x000000aa        0x4 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm644.o
+                0x000000aa                __vector_22
+                0x000000aa                __vector_1
+                0x000000aa                __vector_24
+                0x000000aa                __vector_12
+                0x000000aa                __bad_interrupt
+                0x000000aa                __vector_6
+                0x000000aa                __vector_3
+                0x000000aa                __vector_23
+                0x000000aa                __vector_25
+                0x000000aa                __vector_11
+                0x000000aa                __vector_13
+                0x000000aa                __vector_17
+                0x000000aa                __vector_19
+                0x000000aa                __vector_7
+                0x000000aa                __vector_27
+                0x000000aa                __vector_5
+                0x000000aa                __vector_4
+                0x000000aa                __vector_9
+                0x000000aa                __vector_2
+                0x000000aa                __vector_21
+                0x000000aa                __vector_15
+                0x000000aa                __vector_8
+                0x000000aa                __vector_26
+                0x000000aa                __vector_14
+                0x000000aa                __vector_10
+                0x000000aa                __vector_16
+                0x000000aa                __vector_18
+                0x000000aa                __vector_20
+ .text          0x000000ae      0x4e0 zombitech.o
+                0x0000035c                motorsTest
+                0x00000318                setSpeed
+                0x000001ee                sing
+                0x0000029e                turnRight
+                0x000000ee                portsTest
+                0x0000044c                displaySplashscreen
+                0x000004e6                main
+                0x000000ae                firstTest
+                0x000002d0                setSpeed2
+ .text          0x0000058e       0xd0 BasicControl.o
+                0x00000642                turnRight90Degree
+                0x000005fe                driveForward
+                0x00000626                turnLeft90Degree
+                0x000005d8                driveBackward
+                0x000005bc                brake
+ .text          0x0000065e      0x214 LCD.o
+                0x0000065e                LCDWaitWhileBusy
+                0x00000818                LCDInit
+                0x00000712                LCDHex
+                0x000006d8                LCDSendData
+                0x0000076c                LCDUInt
+                0x00000696                LCDSend
+                0x0000073e                LCDBinary
+                0x000006e0                LCDAddString
+                0x000007f6                LCDInt
+                0x000006d0                LCDSendCommand
+                0x000006fa                LCDString
+ .text          0x00000872      0xeec SPI.o
+                0x00000b1e                setM2Acceleration
+                0x000010ac                getSerialError
+                0x00000ace                setM2BrakeDuration
+                0x00000e06                setVolume
+                0x0000146e                playMelody
+                0x00000c50                getM1Current
+                0x00000d62                playFrequency
+                0x000008a6                SPITransmit
+                0x00000bac                setNumCurrentSamples
+                0x00000890                SPIInit
+                0x00000e32                setNoteGap
+                0x000015bc                saveM1CurrentSamples
+                0x00000a0e                brakeHighMotor2
+                0x00001570                saveM1PWMFrequency
+                0x0000162a                saveM2CurrentLimit
+                0x00001564                restoreDefaultSettings
+                0x000013b4                storeNote
+                0x00000a18                setJointMotor
+                0x0000099c                setMotor2
+                0x00000a4c                accelJointMotor
+                0x00000988                brakeLowMotor1
+                0x0000164c                saveM1Acceleration
+                0x000008c0                SPIReceive
+                0x00000c1e                setM2CurrentLimit
+                0x00001664                saveM1BrakeDuration
+                0x00001716                saveVolume
+                0x00001596                saveM2PWMFrequency
+                0x00000e88                readSerial
+                0x00001334                eraseMelodies
+                0x00001120                readEEPROM
+                0x000016f0                saveEnablePermanentProgMode
+                0x00000af6                setM1Acceleration
+                0x00000a82                brakeJointMotor
+                0x00001740                saveAVRISPVersion
+                0x000015e2                saveM2CurrentSamples
+                0x00000954                accelMotor1
+                0x00000a8c                enableJointMotorMode
+                0x00001038                getSendBuffFreeSpace
+                0x00000a04                brakeLowMotor2
+                0x000014ba                getStatus
+                0x000014f4                getFirmwareVersion
+                0x000008f2                sendMotorPWMCommand
+                0x00000cde                playNote
+                0x000016fc                saveReadReadySize
+                0x00001670                saveM2BrakeDuration
+                0x00000e5a                sendSerial
+                0x00001658                saveM2Acceleration
+                0x00000aa6                setM1BrakeDuration
+                0x00000872                delay_ms
+                0x00000992                brakeHighMotor1
+                0x0000167c                saveSerialSettings
+                0x00000b46                setPWMFrequencies
+                0x000011ba                writeEEPROM
+                0x00001258                setAndSaveSerial
+                0x00001734                saveStartupMelody
+                0x00000cc4                buzzerOff
+                0x00000bec                setM1CurrentLimit
+                0x00001608                saveM1CurrentLimit
+                0x000010e6                getEEPROMBusy
+                0x00000920                setMotor1
+                0x00000c8a                getM2Current
+                0x00000f7e                setSerial
+                0x00000ec2                fastSerialRead
+                0x00001374                endMelody
+                0x000009d0                accelMotor2
+                0x00001728                saveNoteGap
+                0x00000f52                enablePermanentProgMode
+                0x00001004                setReadReadySize
+                0x00001072                getReadBuffNumBytes
+ .text          0x0000175e        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x0000175e        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text          0x0000175e        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x0000175e        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                0x0000175e                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x0000175e       0x28 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_udivmodhi4.o)
+                0x0000175e                __udivmodhi4
+ .text.libgcc   0x00001786        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001786        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001786        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                0x00001786                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001786        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                0x00001786                exit
+                0x00001786                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001786        0x4 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000178a                _etext = .
+
+.data           0x00800100       0xce load address 0x0000178a
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm644.o
+ .data          0x00800100       0x8d zombitech.o
+ .data          0x0080018d       0x41 BasicControl.o
+ .data          0x008001ce        0x0 LCD.o
+ .data          0x008001ce        0x0 SPI.o
+ .data          0x008001ce        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x008001ce        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .data          0x008001ce        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x008001ce        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008001ce                . = ALIGN (0x2)
+                0x008001ce                _edata = .
+                0x008001ce                PROVIDE (__data_end, .)
+
+.bss            0x008001ce        0x1
+                0x008001ce                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008001ce        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm644.o
+ .bss           0x008001ce        0x0 zombitech.o
+ .bss           0x008001ce        0x0 BasicControl.o
+ .bss           0x008001ce        0x0 LCD.o
+ .bss           0x008001ce        0x0 SPI.o
+ .bss           0x008001ce        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x008001ce        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .bss           0x008001ce        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008001ce        0x0 c:/program files/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008001ce        0x1 SPI.o
+                0x008001ce                SPITransmitting
+                0x008001cf                PROVIDE (__bss_end, .)
+                0x0000178a                __data_load_start = LOADADDR (.data)
+                0x00001858                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008001cf        0x0
+                0x008001cf                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008001cf                PROVIDE (__noinit_end, .)
+                0x008001cf                _end = .
+                0x008001cf                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x80
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 zombitech.o
+ .debug_aranges
+                0x00000020       0x20 BasicControl.o
+ .debug_aranges
+                0x00000040       0x20 LCD.o
+ .debug_aranges
+                0x00000060       0x20 SPI.o
+
+.debug_pubnames
+                0x00000000      0x71a
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x90 zombitech.o
+ .debug_pubnames
+                0x00000090       0x6a BasicControl.o
+ .debug_pubnames
+                0x000000fa       0xb1 LCD.o
+ .debug_pubnames
+                0x000001ab      0x56f SPI.o
+
+.debug_info     0x00000000     0x1da8
+ *(.debug_info)
+ .debug_info    0x00000000      0x221 zombitech.o
+ .debug_info    0x00000221      0x138 BasicControl.o
+ .debug_info    0x00000359      0x2f0 LCD.o
+ .debug_info    0x00000649     0x175f SPI.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x541
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x125 zombitech.o
+ .debug_abbrev  0x00000125       0x80 BasicControl.o
+ .debug_abbrev  0x000001a5      0x124 LCD.o
+ .debug_abbrev  0x000002c9      0x278 SPI.o
+
+.debug_line     0x00000000     0x1ff3
+ *(.debug_line)
+ .debug_line    0x00000000      0x650 zombitech.o
+ .debug_line    0x00000650      0x166 BasicControl.o
+ .debug_line    0x000007b6      0x340 LCD.o
+ .debug_line    0x00000af6     0x14fd SPI.o
+
+.debug_frame    0x00000000      0x630
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xa0 zombitech.o
+ .debug_frame   0x000000a0       0x70 BasicControl.o
+ .debug_frame   0x00000110       0xc0 LCD.o
+ .debug_frame   0x000001d0      0x460 SPI.o
+
+.debug_str      0x00000000      0x7c8
+ *(.debug_str)
+ .debug_str     0x00000000      0x114 zombitech.o
+                                0x14d (size before relaxing)
+ .debug_str     0x00000114       0x6d BasicControl.o
+                                0x136 (size before relaxing)
+ .debug_str     0x00000181       0xdc LCD.o
+                                0x1a0 (size before relaxing)
+ .debug_str     0x0000025d      0x56b SPI.o
+                                0x664 (size before relaxing)
+
+.debug_loc      0x00000000     0x1354
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x16a zombitech.o
+ .debug_loc     0x0000016a       0xa0 BasicControl.o
+ .debug_loc     0x0000020a      0x219 LCD.o
+ .debug_loc     0x00000423      0xf31 SPI.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(zombitech.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0x330
+ .debug_ranges  0x00000000      0x330 SPI.o
